@@ -1,0 +1,134 @@
+@import url(../variables.css);
+
+.card_container {
+    position: relative;
+    top: -100px;
+    bottom: 0;
+}
+
+.card {
+    width: 275px;
+    height: 100%;
+    background: var(--DarkDesaturatedBlue);
+    border: 0;
+    border-radius: 10px;
+}
+
+
+.card_contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 50px;
+    margin: 7px 0;
+}
+
+.card_contents .social_handle {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 10px;
+    color: var(--DesaturatedBlue);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.card_contents > h1 {
+    color: var(--White);
+    font-size: 4rem;
+}
+
+.followers {
+    font-size: 0.7rem;
+    letter-spacing: 6px;
+    color: var(--DarkGrayishBlue);
+    margin-bottom: 25px;
+}
+
+.today_highlight {
+    font-size: 0.8rem;
+    color: var( --LimeGreen);
+    margin-bottom: 10px;
+}
+
+.social_handle > img {
+    width: 18px;
+    height: 18px;
+}
+
+.card_line_top {
+    width: inherit;
+    height: 4px;
+    border: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+/*
+background: var(--Facebook);
+
+.card_line_top_insta {
+    width: inherit;
+    height: 4px;
+    background: var(--Instagram);
+    border: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card_line_top_youtube {
+    width: inherit;
+    height: 4px;
+    background: var(--YouTube);
+    border: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+*/
+
+@media screen and (max-width: 2230px) {
+    .card_container {
+        justify-content: center;
+    }
+    
+    .card {
+        width: auto;
+        height: 100%;
+        background: var(--DarkDesaturatedBlue);
+        border: 0;
+        border-radius: 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .card_container {
+        justify-content: center;
+    }
+    
+    .card {
+        width: auto;
+        height: 100%;
+        background: var(--DarkDesaturatedBlue);
+        border: 0;
+        border-radius: 10px;
+    }
+}
+
+/* ===== MEDIA QUERIES (SMALL DEVICES) ======*/
+
+@media screen and (max-width: 600px) {
+
+    .card_container {
+        justify-content: center;
+        top: -80px;
+    }
+    
+    .card {
+        width: auto;
+        background: var(--DarkDesaturatedBlue);
+        border: 0;
+        border-radius: 10px;
+    }
+}

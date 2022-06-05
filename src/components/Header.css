@@ -1,0 +1,126 @@
+@import url(../variables.css);
+
+
+.header_title p {
+    color: var(--DesaturatedBlue);
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+.header_wrapper {
+    width: auto;
+    color: var(--White);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header_toggle {
+    width: auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 27px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--DarkThemeToggle);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 5px;
+    bottom: 3px;
+    background: var(--VeryDarkPaleBlue);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background: var(--DarkThemeToggle);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px white;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+    background: white;
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/* ===== MEDIA QUERIES (TABLET DEVICES) ======*/
+
+@media screen and (max-width: 1024px) {
+    
+}
+
+/* ===== MEDIA QUERIES (SMALL DEVICES) ======*/
+
+@media screen and (max-width: 600px) {
+
+    .header_title > h1 {
+        font-size: 1.8rem;
+    }
+
+    .header_title > p {
+        font-size: 1.1rem;
+    }
+
+    .header_title {
+        height: 90px;
+        border-bottom: 1px solid var(--DarkGrayishBlue);
+    }
+
+    .header_wrapper {
+        width: auto;
+        color: var(--White);
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .header_toggle {
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0px 35px 0px;
+    }
+
+}

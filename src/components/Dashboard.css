@@ -1,0 +1,112 @@
+@import url(../variables.css);
+
+
+.top-bg {
+    width: auto;
+    height: 140px;
+    background: var(--VeryDarkPaleBlue);
+    z-index: 10;
+    padding: 50px 120px 0px 120px;
+}
+
+.dashboard_top {
+    padding: 50px 120px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.3rem;
+    bottom: 0;
+}
+
+.dashboard {
+    background: var(--VeryDarkBlue);
+    margin: 20px 10px;
+}
+
+.dashboard_header>h1 {
+    padding: 0px 120px;
+    color: var(--White);
+    margin-top: -100px;
+}
+
+.dashboard_bottom {
+    padding: 30px 120px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .top-bg {
+        width: auto;
+        height: 180px;
+        background: var(--VeryDarkPaleBlue);
+        z-index: 10;
+        padding: 35px 58px 28px 58px;
+    }
+
+    .dashboard {
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .dashboard_top {
+        width: auto;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding: 35px 58px 28px 58px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.3rem;
+        bottom: 0;
+    }
+
+    .dashboard_bottom {
+        padding: 30px 58px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+}
+
+/* ===== MEDIA QUERIES (SMALL DEVICES) ======*/
+
+@media screen and (max-width: 600px) {
+
+    .top-bg {
+        width: auto;
+        height: 180px;
+        background: var(--VeryDarkPaleBlue);
+        z-index: 10;
+        padding: 35px 28px 28px 28px;
+    }
+
+    .dashboard {
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .dashboard_top {
+        width: auto;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding: 50px 28px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr;
+        gap: 1.3rem;
+        bottom: 0;
+    }
+
+    .dashboard_bottom {
+        padding: 30px 0px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.3px;
+    }
+
+}

@@ -1,0 +1,116 @@
+@import url(../variables.css);
+
+
+.card_overview {
+    width: 275px;
+    height: 100%;
+    background: var(--DarkDesaturatedBlue);
+    border: 0;
+    border-radius: 10px;
+}
+
+
+.card_overview_contents {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 28px 20px 28px;
+}
+
+.card_contents > h1 {
+    color: var(--White);
+    font-size: 4rem;
+}
+
+.overview_highlight {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+
+
+.overview_handle > h4 {
+    font-size: 1.1rem;
+    color: var(--DesaturatedBlue);
+}
+
+.bottom > img {
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+}
+
+.overview_handle {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 36px;
+    color: var(--DarkGrayishBlue);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.bottom {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+.bottom > p {
+    margin-top: 22px;
+}
+
+.overview_followers {
+    color: var(--White);
+    font-size: 2.3rem;
+}
+
+
+@media screen and (max-width: 2230px) {
+    .overview_container {
+        padding: 0px 0px;
+    }
+
+    .card_overview {
+        width: auto;
+        background: var(--DarkDesaturatedBlue);
+        border: 0;
+        border-radius: 10px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .overview_container {
+        padding: 0px 0px;
+    }
+
+    .card_overview {
+        width: auto;
+        background: var(--DarkDesaturatedBlue);
+        border: 0;
+        border-radius: 10px;
+    }
+}
+
+/* ===== MEDIA QUERIES (SMALL DEVICES) ======*/
+
+@media screen and (max-width: 600px) {
+
+    .overview_container {
+        padding: 8px 28px;
+    }
+
+    .card_overview {
+        width: auto;
+        background: var(--DarkDesaturatedBlue);
+        border: 0;
+        border-radius: 10px;
+    }
+
+}
